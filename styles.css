@@ -1,0 +1,121 @@
+/* universal */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: white;
+}
+
+.center {
+    margin: auto;
+    width: 90%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+}
+
+.flex-item {
+    align-self: center;
+}
+/* logo */
+.logo-container {
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+.logo {
+    width: auto;
+    height: 50px;
+    margin-right: 5px;
+}
+
+.logo-container h1 {
+    padding: 0;
+    margin: 0 0 5px 0;
+    font-size: 2rem;
+    align-self:flex-start;
+    color: #199cd8;  
+}
+
+/* Header */
+
+.header-container {
+    justify-content: space-around;
+    flex-wrap: wrap;    
+}
+
+.header-flex-item {
+    width: 200px;
+    margin: 10px 0 10px 10px;
+    text-align: center;
+}
+
+/* Menu */
+.main-menu {
+    justify-content: space-around;
+    flex-wrap: wrap; 
+}
+
+.main-menu a {
+    margin: 10px;
+}
+
+.mobile-menu-container {
+    justify-content: center;
+    display: none;
+}
+
+.mobile-menu-close {
+    display: none;
+}
+/* Menu Mobile */
+@media screen and (max-width: 705px) {
+    .main-menu a{
+        display: none;
+    }
+.mobile-menu-container {
+    display: flex;
+}
+.main-menu:hover a{
+    display: flex;
+}
+
+.main-menu:hover .mobile-menu-open {
+    display: none;
+}
+
+.main-menu:target a{
+    display: flex;
+}
+
+.main-menu:target .mobile-menu-open {
+    display: none;
+}
+}
+
+/* Top Products Section */
+.top-products-container {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.products-container {
+    flex-direction: column;
+    text-align: center;
+    margin: 10px;
+}
+
+.product-image {
+    width: 300px;
+    height: auto;
+}
+
+
+/* testing CSS delete when finished */
+.long {
+    height: 2000px;
+}
