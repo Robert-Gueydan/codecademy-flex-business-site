@@ -2,7 +2,7 @@
 * {
     box-sizing: border-box;
 }
-header {
+nav {
     position: sticky;
     top: 0;
     z-index: 10;
@@ -11,10 +11,7 @@ header {
 
 body {
     font-size: 16px;
-}
-.center {
-    width: 90%;
-    margin-left: 10%;
+    margin-left: 12%;
 }
 
 a {
@@ -53,9 +50,12 @@ input {
     font-family: 'Oxygen', sans-serif;
 }
 /* logo */
+.logo-center {
+    justify-content: center;
+}
 .logo-container {
     margin-bottom: 10px;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .logo {
@@ -72,26 +72,27 @@ input {
     color: #199cd8;  
 }
 
-/* Header */
 
-.header-container {
+
+/* Main Nav Container */
+.nav-container {
     justify-content: space-around;
     flex-wrap: wrap;
-      
+    max-width: 1300px;
 }
 
-.header-flex-item {
+.nav-flex-item {
     width: 200px;
     margin: 10px 0 10px 10px;
     text-align: center;
 }
 
-/* Menu */
+/* Menu Container */
 .main-menu {
     justify-content: space-around;
     flex-wrap: wrap; 
-    max-width: 1800px;
-    margin: auto;
+    max-width: 1300px;
+    /* margin: auto; */
     font-size: 1.2rem;
 }
 
@@ -104,9 +105,7 @@ input {
     display: none;
 }
 
-.mobile-menu-close {
-    display: none;
-}
+
 /* Menu Mobile */
 @media screen and (max-width: 705px) {
     .main-menu {
@@ -117,24 +116,77 @@ input {
     .main-menu a{
         display: none;
     }
-.mobile-menu-container {
-    display: flex;
-}
-.main-menu:hover a{
-    display: flex;
+   .mobile-menu-container {
+        display: flex;
+    }
+    .main-menu:hover a{
+        display: flex;
+    }
+
+    .main-menu:hover .mobile-menu-open {
+        display: none;
+    }
+
+    .main-menu:target a{
+        display: flex;
+    }
+
+    .main-menu:target .mobile-menu-open {
+        display: none;
+    }
 }
 
-.main-menu:hover .mobile-menu-open {
-    display: none;
+/* Header */
+.promo-text {
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 0 10px 0;
+    max-width: 1300px;
+    font-size: 1.3rem;
 }
 
-.main-menu:target a{
-    display: flex;
+.promo-text img {
+    margin-right: 10px;
+    width: auto;
+    height: 2rem;
 }
 
-.main-menu:target .mobile-menu-open {
-    display: none;
+
+.hero {
+    max-width: 1300px;
+    height: 433px;
+    background: url("/images/miyuki-delica-11-0-seed-bead-db362-2.jpg");
+    border: solid;
+    color: hsla(136, 0%, 93%, 90%);
+    font-size: 2rem;
+    text-align: center;
 }
+
+.hero h1 {
+    margin: 0 0 10px 0;
+}
+
+.hero-button {
+    width: 200px;
+    margin: 100px auto;
+    padding: 20px 10px;
+    background-color: #66cdff;
+    border-radius: 16px;
+
+}
+
+.hero-button a{
+    color: white;
+}
+@media screen and (max-width: 465px) {
+    .promo-text{ 
+        font-size: 1rem;
+    }
+}
+@media screen and  (max-width: 855px) {
+    .hero {
+        display:none
+    }
 }
 
 /* Top Products Section */
@@ -214,8 +266,6 @@ input {
     min-width: 100px;
     margin: 10px 10px 10px 5px;
     flex-direction: column;
-
-    
 }
 
 .shape-text {
@@ -234,6 +284,14 @@ input {
 
 .shape-text p {
     margin-bottom: 3px;
+    visibility:hidden;
+}
+.shape-text:hover p {
+    visibility:visible;
+}
+
+.shape-text:target p {
+    visibility: visible;
 }
 
 .shape-text a {

@@ -11,22 +11,27 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Oxygen:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="center">
   <!--logo-->
-  
+  <div class="container logo-center">
     <div class="container logo-container">
       <img class="logo flex-item" src="images/aura-logo.jpg">
       <h1 class="logo-text flex-item">Aura Beads</h1>
     </div>
-  
-  <header>
-      <!--Login Container-->
-        <div class="container header-container">
-          <a class="login flex-item header-flex-item" href="#" title="Login">Login/Account</a>
-          <div class="cart flex-item header-flex-item">
-            <a class="cart" href="#"><img src="images/outline_shopping_cart_black_24dp.png" title="cart"></a>
+  </div>
+ <nav>
+      <!--Main Nav Container-->
+        <div class="container nav-container">
+          <div class="login flex-item nav-flex-item">
+            <a href="#" title="Login">
+              <span>Login/Account</span>
+            </a>
           </div>
-          <div class="search flex-item header-flex-item">
+          <div class="cart flex-item nav-flex-item">
+            <a class="cart" href="#"><img src="images/outline_shopping_cart_black_24dp.png" title="cart">
+            </a>
+          </div>
+          <div class="search flex-item nav-flex-item">
             <input class="search-bar" type="search" id="site-search" name="search" aria-label="Search for your favorite bead" placeholder="Search">
           </div>
         </div>
@@ -48,9 +53,19 @@
        <a href="#" title="Tutorial">Tutorial</a>
        <a href="#" title="Support">Support</a>
      </div>
-  </header>
+ </nav>
+ <header>
+   <div>
+   <div class="promo-text"><img src="/images/outline_local_shipping_black_24dp.png" title="shipping"><span>Free Shipping on US orders over $25.</span></div>
+  </div>
+  <div class="hero">
+    <h1>Over 20,000 types of beads</h1>
+    <div class="hero-button"><a href="#">Shop Now</a></div>
+    <p></p>
+  </div>
+ </header>
   <section>
-    <div class="center">
+    <div>
       <h2>Top Sellers:</h2>
       <div class="container top-products-container">
         <div class="container products-container">
@@ -81,12 +96,17 @@
       </div>
   </div>
   </section>
+  
   <section class="shape-section">
-    <div class="center">
+    <div>
       <h2>Top Bead Shapes:</h2>
       <div class="container shape-container">
         <div class="container">
-          <div class="shape-image shape-image-1"><a href="#" title="Fire Polished Beads"><img src="images/swarovski-6mm-pearl-mulberry-pink-2018.jpg" alt="pearl-bead"></a></div>
+          <div class="shape-image shape-image-1">
+            <a href="#" title="Glass Pearls">
+              <img src="images/swarovski-6mm-pearl-mulberry-pink-2018.jpg" alt="pearl-bead">
+            </a>
+          </div>
           <div class="container shape-text">
             <h3>Round Pearl Sizes</h3>
             <p>Crystal Pearls are designed with a Genuine crystals core. Their lustrous shimmer is achieved by using a unique coating technology over the crystal core.</p>
@@ -96,18 +116,25 @@
           </div>
         </div>
         <div class="container">
-          <div class="shape-image shape-image-2"><a href="#" title="Fire Polished Beads"><img src="images/(519)FP-06-28001.jpg" title="fire-polished-bead"></a></div>
+          <div class="shape-image shape-image-2">
+            <a href="#" title="Fire Polished Beads">
+              <img src="images/(519)FP-06-28001.jpg" title="fire-polished-bead">
+            </a>
+          </div>
           <div class="container shape-text">
-            
             <h3>Fire Polished Beads</h3>
             <p>Czech Fire polished beads unique charm and appearance are a result of the warm flash from each facet and the selection of colors and finishes available with no other type of bead.</p>
-          
             <a href="#" title="3mm Fire Polished">3mm Fire Polished</a>
             <a href="#" title="4mm Fire Polished">4mm Fire Polished</a>
-            <a href="#" title="6mm Fire Polished">6mm Fire Polished</a></div>
+            <a href="#" title="6mm Fire Polished">6mm Fire Polished</a>
+          </div>
         </div>
         <div class="container">
-          <div class="shape-image shape-image-3"><a href="#" title="Delica Beads"><img src="images/miyuki-delica-11-0-seed-bead-mix9118.jpg" title="delica-bead"></a></div>
+          <div class="shape-image shape-image-3">
+            <a href="#" title="Delica Beads">
+              <img src="images/miyuki-delica-11-0-seed-bead-mix9118.jpg" title="delica-bead">
+            </a>
+          </div>
           <div class="container shape-text">
             <h3>Delica Bead</h3>
             <p>MIYUKI Delica's cylinder form make them a popular choice for jewelry designs that require intricate detail.</p>
@@ -117,7 +144,11 @@
           </div>
         </div>
         <div class="container">
-          <div class="shape-image shape-image-4"><a href="#" title="Superduo Beads"><img src="images/PA-25-63130AM.jpg" title="Super-Duo-bead"></a></div>
+          <div class="shape-image shape-image-4">
+            <a href="#" title="Superduo Beads">
+              <img src="images/PA-25-63130AM.jpg" title="Super-Duo-bead">
+            </a>
+          </div>
           <div class="container shape-text">
             <h3>Super Duo Beads</h3>
             <p>Super Duo beads distinct two hole shape make them a popular selection for many jewelry designs. </p>
@@ -125,12 +156,20 @@
             <a href="#" title="Mini Duo Beads">Mini Duo Beads</a>
             <a href="#" title="Other Duo Beads">Other Duo Beads</a>
           </div>
-      </div>
+        </div>
       </div>
     </div>
-  </section>
-  <footer>
+  <section>
+<footer>
+  <div class="footer-container">
+    <div class="about-us">
+      <h3>About US</h3>
+      <!-- <img src="/images/ceo.jpg"> -->
+    </div>
+    <div class="container contact-footer"></div>
+    <div class="container account-footer"></div>
+  </div>
+</footer>
 
-  </footer>
 </body>
 </html>
