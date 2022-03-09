@@ -9,9 +9,9 @@ nav {
     background-color: white;
 }
 
-body {
+html, body {
     font-size: 16px;
-    margin-left: 12%;
+    height: 100%;
 }
 
 a {
@@ -30,6 +30,14 @@ a:active {
 
 .container {
     display: flex;
+}
+
+.grid-container {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 100%;
+    margin-left: 12%;
 }
 
 .flex-item {
@@ -155,28 +163,44 @@ input {
 .hero {
     max-width: 1300px;
     height: 433px;
-    background: url("/images/miyuki-delica-11-0-seed-bead-db362-2.jpg");
+    background: url("images/miyuki-delica-11-0-seed-bead-db362-2.jpg");
     border: solid;
-    color: hsla(136, 0%, 93%, 90%);
     font-size: 2rem;
     text-align: center;
 }
 
 .hero h1 {
     margin: 0 0 10px 0;
+    color: hsla(136, 0%, 93%, 90%);
 }
 
-.hero-button {
+/* .hero-button {
     width: 200px;
     margin: 100px auto;
     padding: 20px 10px;
     background-color: #66cdff;
     border-radius: 16px;
 
+} */
+
+.hero-button a:hover {
+    background-color: #69ffe7;
+    text-decoration: none;
+}
+
+.hero-button a:hover {
+    text-decoration: none;
+    color: black;
 }
 
 .hero-button a{
+    width: 200px;
+    margin: 100px auto;
+    padding: 20px 10px;
+    background-color: #006ea6;
     color: white;
+    border-radius: 16px;
+    display: block;
 }
 @media screen and (max-width: 465px) {
     .promo-text{ 
@@ -223,9 +247,9 @@ input {
     margin: auto;
 }
 
-/* testing CSS delete when finished */
-.long {
-    height: 2000px;
+button:hover {
+    background-color: #69ffe7;
+    text-decoration: underline;
 }
 
 /* Shape Section */
@@ -238,7 +262,6 @@ input {
 .shape-container {
     max-height: 300px;
     display: flex;
-    /* flex-wrap: wrap; */
     justify-content: flex-start;
     flex-direction: column;
     max-width: 1300px;
@@ -318,4 +341,40 @@ input {
     .shape-text h3 {
         display: flex;
     }
+}
+
+/* Footer Container */
+
+footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-footer, .account-footer {
+    flex-direction: column;
+    margin: auto;
+    font-size: 1.2rem;
+}
+
+.footer-container a{
+    margin: 10px
+}
+
+.footer-container img {
+    height: 200px;
+    width: auto;
+}
+
+@media screen and (max-width: 700px) {
+    figure, h3 {
+    display:none;
+    }
+}
+    
 }
