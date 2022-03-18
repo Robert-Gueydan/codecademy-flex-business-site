@@ -11,9 +11,12 @@ nav {
 
 html, body {
     font-size: 16px;
-    height: 100%;
+    max-width: 1920px;
 }
 
+.center {
+    justify-content: center;
+}
 a {
     text-decoration: none;
     color: #1479A8;
@@ -33,11 +36,13 @@ a:active {
 }
 
 .grid-container {
-    min-height: 100%;
+    /* min-height: 100%; */
     display: grid;
     grid-template-rows: auto 1fr auto;
     grid-template-columns: 100%;
-    margin-left: 12%;
+    /* align-items: center;
+    justify-items: center; */
+    /* margin-left: 12%; */
 }
 
 .flex-item {
@@ -58,9 +63,9 @@ input {
     font-family: 'Oxygen', sans-serif;
 }
 /* logo */
-.logo-center {
+/* .logo-center {
     justify-content: center;
-}
+} */
 .logo-container {
     margin-bottom: 10px;
     justify-content: flex-start;
@@ -76,7 +81,6 @@ input {
     padding: 0;
     margin: 0 0 5px 0;
     font-size: 2rem;
-    align-self:flex-start;
     color: #199cd8;  
 }
 
@@ -86,7 +90,7 @@ input {
 .nav-container {
     justify-content: space-around;
     flex-wrap: wrap;
-    max-width: 1300px;
+    /* max-width: 1300px; */
 }
 
 .nav-flex-item {
@@ -99,13 +103,13 @@ input {
 .main-menu {
     justify-content: space-around;
     flex-wrap: wrap; 
-    max-width: 1300px;
+    /* max-width: 1300px; */
     /* margin: auto; */
     font-size: 1.2rem;
 }
 
 .main-menu a {
-    margin: 10px;
+    margin: 7px;
 }
 
 .mobile-menu-container {
@@ -115,7 +119,7 @@ input {
 
 
 /* Menu Mobile */
-@media screen and (max-width: 705px) {
+@media screen and (max-width: 800px) {
     .main-menu {
         width: 100%;
         background-color: #fafafa;
@@ -149,7 +153,7 @@ input {
     text-align: center;
     padding: 10px 10px 10px 10px;
     margin: 10px 0 10px 0;
-    max-width: 1300px;
+    /* max-width: 1300px; */
     font-size: 1.3rem;
 }
 
@@ -161,10 +165,10 @@ input {
 
 
 .hero {
-    max-width: 1300px;
+    /* max-width: 1300px; */
     height: 433px;
-    background: url("images/miyuki-delica-11-0-seed-bead-db362-2.jpg");
-    border: solid;
+    background: no-repeat url("images/miyuki-delica-11-0-seed-bead-db362-3.jpg");
+    border: solid 1px red;
     font-size: 2rem;
     text-align: center;
 }
@@ -215,8 +219,8 @@ input {
 
 /* Top Products Section */
 .top-products-container {
-    flex-basis: 1500px;
-    justify-content: flex-start;
+    /* flex-basis: 1500px; */
+    /* justify-content: flex-start; */
     flex-wrap: wrap;
     margin: auto;
 }
@@ -224,7 +228,7 @@ input {
     flex-direction: column;
     flex-basis: 20%;
     text-align: center;
-    margin: 10px;
+    margin: 8px;
     background-color: #f5fcff;
     border: solid 5px #f5fcff;
     border-radius: 5px;
@@ -252,6 +256,12 @@ button:hover {
     text-decoration: underline;
 }
 
+@media screen and (max-width: 1610px){
+    .top-products-container {
+        justify-content: flex-start;
+    }
+}
+
 /* Shape Section */
 
 .shape-section {
@@ -264,7 +274,7 @@ button:hover {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    max-width: 1300px;
+    /* max-width: 1300px; */
 }
 
 .shape-image {
